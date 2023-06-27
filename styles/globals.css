@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kablammo&family=Poppins&family=Tilt+Prism&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.fontNue {
+  font-family: 'Bebas Neue', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+.landingBg {
+  background-image: url("https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80");
+  filter: brightness(10%);
+}
+::-webkit-scrollbar-thumb {
+  background: #242424;
+}
+
+.gradient1 {
+  background: rgb(0, 151, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 255, 1) 0%,
+    rgba(136, 0, 255, 1) 100%
+  );
+}
+.gradient2 {
+  background: rgb(0, 151, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 255, 1) 0%,
+    rgba(136, 0, 255, 1) 42%,
+    rgba(255, 0, 116, 1) 100%
+  );
+}
+
+.card::after {
+  background: rgb(0, 151, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 255, 1) 0%,
+    rgba(136, 0, 255, 1) 42%,
+    rgba(255, 0, 116, 1) 100%
+  );
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotate(-3deg);
+  border-radius: 12px;
+}
+.banner::after {
+  background: rgb(0, 151, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 255, 1) 0%,
+    rgba(136, 0, 255, 1) 42%,
+    rgba(255, 0, 116, 1) 100%
+  );
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotate(-2deg);
+  border-radius: 12px;
+}
+.txtgradient {
+  background: rgb(0, 151, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 255, 1) 0%,
+    rgba(136, 0, 255, 1) 42%,
+    rgba(255, 0, 116, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 600px) {
+  .banner::after {
+    display: none;
+  }
+}
